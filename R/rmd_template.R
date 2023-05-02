@@ -15,4 +15,7 @@ rmd_template <- function(template, dir = getwd()) {
     file.copy(from = x, to = dir)
   })
   )
+
+  file.show(file.path(dir, paste0(template, '.Rmd')), pager = getOption('browser'))
+  NULL
 }
