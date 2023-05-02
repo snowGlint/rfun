@@ -6,6 +6,7 @@
 #' @param dir where to create template file.
 #'
 #' @return RETURN_DESCRIPTION
+#' @export
 #' @examples
 #' # ADD_EXAMPLES_HERE
 rmd_template <- function(template, dir = getwd()) {
