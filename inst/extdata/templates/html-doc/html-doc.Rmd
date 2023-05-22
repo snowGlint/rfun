@@ -24,6 +24,16 @@ knitr::opts_chunk$set(
 library(ggplot2, help, pos = 2, lib.loc = NULL)
 ```
 
+```{css}
+h1 {font-style: italic}
+h2 {font-style: italic}
+body {font-size: 20px;
+font-family: "Times New Roman", Times, serif;}
+
+a {font-style: italic}
+
+```
+
 # cite
 
 cite ggplot2[@ggplot2]  
@@ -31,16 +41,16 @@ cite r-base[@r-base]
 
 # cross-reference
 
-You can use cross reference for table, figure and expression. \@ref(fig:plot-cor) show the cor plot of mtcars dataset.
-If you want to cross-reference, those elements should have label, because reference dependend on these label envioment, and figure shoul have caption(`fig.cap`)
+You can use cross reference for tables, figures, and expressions. \@ref(fig:plot-cor) shows the cor plot of mtcars dataset.
+If you want to cross-reference, those elements should have labels, because references dependent on these label environments, and the figure should have a caption(`fig.cap`)
 
-## correlation plot
+## Correlation plot
 
 ```{r plot-cor, fig.show="hold", fig.cap = "(ref:mtcar-cor)"}
 plot(mtcars)
 ```
 
-(ref:mtcar-cor) this is figure caption
+(ref:mtcar-cor) this is a figure caption
 
 
 ## mtcars table
@@ -48,7 +58,8 @@ plot(mtcars)
 table \@ref(tab:tab-mtcars) show the mtcars table.
 
 ```{r tab-mtcars}
-head(mtcars) |>  kableExtra::kbl(caption = "this is table caption") |>
+head(mtcars) |>
+  kableExtra::kbl(caption = "this is table caption") |>
   kableExtra::kable_classic(full_width = FALSE, html_font = "Cambria")
 ```
 
@@ -61,7 +72,6 @@ head(mtcars) |>  kableExtra::kbl(caption = "this is table caption") |>
 
 [More on html table](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)  
 [More on cite style language](https://www.zotero.org/styles)
-[more on bib]
 
 # More information
 
