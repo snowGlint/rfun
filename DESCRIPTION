@@ -11,3 +11,6 @@ RoxygenNote: 7.2.3
 Imports: 
     docthis,
     usethis
+Suggests: 
+    pagedown,
+    tufte
